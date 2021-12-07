@@ -150,6 +150,7 @@ internal final class View: UIView {
     }
     
     internal func updateUI() {
+        window?.bringSubviewToFront(self)
         tableView.reloadData()
         tableView.layoutIfNeeded()
         
